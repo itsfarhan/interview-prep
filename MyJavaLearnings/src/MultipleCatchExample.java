@@ -6,7 +6,7 @@ public class MultipleCatchExample {
             int a = 10;
             int b = 0;
             int result = a / b; //"ArthemeticException: cannot be divided by 0.
-
+            System.out.println(result);
             System.out.println(myArray[5]);
         }
         catch(ArithmeticException e){

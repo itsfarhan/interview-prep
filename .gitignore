@@ -1,0 +1,24 @@
+# Ignore Java build files
+*.class
+*.jar
+*.war
+*.ear
+
+# Ignore package files
+*.log
+*.tmp
+
+# Ignore IDE specific files
+.vscode/
+.idea/
+*.iml
+
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
+
+# Ignore build directories
+bin/
+build/
+out/
+

@@ -1,5 +1,5 @@
 class BankingEncapsulationExample{
-    private double balance;
+    private double balance; 
 
         BankingEncapsulationExample(double balance) {
             this.balance = balance;
@@ -16,7 +16,7 @@ class BankingEncapsulationExample{
     
         public void withdraw(double amount){
             if (amount > 0 && amount <= balance){
-                balance -= amount;
+                balance -= amount; 
             }
             else{
                 System.out.println("Insufficient balance");
@@ -31,7 +31,7 @@ class BankingEncapsulationExample{
     public class EncapsulationExample {
         public static void main(String[] args) {
         BankingEncapsulationExample account = new BankingEncapsulationExample(10000.00);
-        account.deposit(5000.0);
+        account.deposit(5000.0); 
         account.withdraw(2000.0);
         System.out.println("Balance of the account is -> "+ account.getBalance());
 

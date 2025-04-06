@@ -70,6 +70,7 @@ Imagine you want to design a car. Class is like the blueprint for a car. It desc
     accessModifier returnType methodName(parameterList) {
         // method body
     }
+
 **Access Modifier:** This defines from where methods are accessible. (eg: public, private, protected)
 **Return Type:** This defines what type of method will return (eg, int, String, void)
 **Method Name:** This is defined by us (user-defined).

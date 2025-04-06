@@ -74,7 +74,8 @@ Class is the blueprint or template from which objects are created. It defines th
 An instance of a class. It contains actual values for the fields and can execute methods defined in the class.
 ### Analogy:
 Imagine you want to design a car. Class is like the blueprint for a car. It describes all the components and features of a car (like engine, wheels, speed, color, etc.), but it doesn't represent an actual car until you create an object from that blueprint.
-### *Code:* [ClassesObjectsExample.java](https://github.com/itsfarhan/interview-prep/blob/main/JavaExamples/src/ClassesObjectsExample.java)
+#### *Code:* [ClassesObjectsExample.java](https://github.com/itsfarhan/interview-prep/blob/main/JavaExamples/src/ClassesObjectsExample.java)
+<br>
 
 ## Methods
 ### What is a Method?
@@ -94,7 +95,8 @@ Imagine you want to design a car. Class is like the blueprint for a car. It desc
 **User defined Methods:** We define this methods based on our own requirements.
 **Standard Library Methods:** These are pre defined methods that are available in java libraries.
 
-### *Code:* [MethodsExample.java](https://github.com/itsfarhan/interview-prep/blob/main/JavaExamples/src/MethodsExample.java)
+#### *Code:* [MethodsExample.java](https://github.com/itsfarhan/interview-prep/blob/main/JavaExamples/src/MethodsExample.java)
+<br>
 
 ## Stack and Heap Memory
 ### **1. Stack Memory:**

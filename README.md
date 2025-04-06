@@ -71,9 +71,9 @@ Imagine you want to design a car. Class is like the blueprint for a car. It desc
         // method body
     }
 
-**Access Modifier:** This defines from where methods are accessible. (eg: public, private, protected)
-**Return Type:** This defines what type of method will return (eg, int, String, void)
-**Method Name:** This is defined by us (user-defined).
+**Access Modifier:** This defines from where methods are accessible. (eg: public, private, protected).<br>
+**Return Type:** This defines what type of method will return (eg, int, String, void).<br>
+**Method Name:** This is defined by us (user-defined).<br>
 **Parameters:** This is optional! But if your method requires any input, then params can be given.
 
 ### Types of Methods:

@@ -52,6 +52,18 @@ Along with that, I’m also focusing on **Data Structures and Algorithms** and *
 
  - List item
 
+
+```txt
+ 																	    _   __ ____  ______ ______ _____
+   																	   / | / // __ \/_  __// ____// ___/
+  																	  /  |/ // / / / / /  / __/   \__ \ 
+ 																	 / /|  // /_/ / / /  / /___  ___/ / 
+																	/_/ |_/ \____/ /_/  /_____/ /____/  
+
+```
+
+# Java Basics
+
 ## Classes and Objects
 
 ### What is a Class in Java?

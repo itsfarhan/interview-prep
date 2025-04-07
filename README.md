@@ -151,6 +151,7 @@ If too many method calls are made (deep recursion), it leads to a `StackOverflow
 	    }
 
 ## Array
+#### *Code:* [ArraysExamples.java](https://github.com/itsfarhan/interview-prep/blob/main/JavaExamples/src/ArraysExamples.java)
 
 ## Array of Objects
 

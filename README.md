@@ -165,6 +165,21 @@ If too many method calls are made (deep recursion), it leads to a `StackOverflow
 	    }
 
 ## Array
+### What is an Array?
+Array is a collection of **fixed size** elements in which all elements belong to same data type. For example, if you wanna store group of integers you gotta use **int[]**.
+#### Key points about Arrays:
+- Fixed Size: Once array size has been initialized, it cant be changed.
+- Same Data type: Elements in array should belong to same data type.
+- Indexing: Index in Array starts with **0**. Which means the index value of **first element** in array is **0** and **2nd element** value is **1** and it goes on.
+- Random Access: You can access any element of the Array based on its index value.
+#### * Btw, there are lot of ways to initialize array. Lets check that out.*
+
+    int[] numbers;   // Declaration of an integer array
+    String[] fruits; // Declaration of a String array
+    int[] numbers = new int[5]; // Array of 5 integers
+    int[] numbers = {10, 20, 30, 40, 50}; // Array with direct initialization=
+    int[] numbers = new int[] {1, 2, 3, 4, 5};
+
 #### *Code:* [ArraysExamples.java](https://github.com/itsfarhan/interview-prep/blob/main/JavaExamples/src/ArraysExamples.java)
 
 ## Array of Objects

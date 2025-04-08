@@ -180,7 +180,7 @@ Array is a collection of **fixed size** elements in which all elements belong to
     int[] numbers = {10, 20, 30, 40, 50}; // Array with direct initialization=
     int[] numbers = new int[] {1, 2, 3, 4, 5};
 
-#### *Code:* [ArraysExamples.java](https://github.com/itsfarhan/interview-prep/blob/main/JavaExamples/src/ArraysExamples.java)
+#### *Code:* [ArraysExamples.java](https://github.com/itsfarhan/interview-prep/blob/main/JavaExamples/src/ArraysExamples.java) and [ArraysExample.java](https://github.com/itsfarhan/interview-prep/blob/main/JavaExamples/src/ArraysExample.java)
 
 ## Array of Objects
 

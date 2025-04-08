@@ -1,3 +1,4 @@
+﻿
 # Interview Preparation
 
 I started my career with Java and right now I’m preparing for interviews by revising both **Java basics** and **advanced topics**, along with learning **Spring Boot**.
@@ -42,11 +43,24 @@ Along with that, I’m also focusing on **Data Structures and Algorithms** and *
 
 # SpringBoot
 
- - List item
 
 # Data Structures and Algorithms
+-----------
+## Arrays
+## Stacks
+## LinkedLists
+## Queues
+## Recursions
+## Sortings
+## Binary Search
+## Trees
+## Backtracking
+## Heap or Priority Queue
+## Hashmap/Hashing
+## Graphs
+## Dynamic Programming(DP)
+## Bit Manipulation
 
- - List item
 
 # System Design
 

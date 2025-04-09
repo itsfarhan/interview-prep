@@ -185,7 +185,7 @@ Array is a collection of **fixed size** elements in which all elements belong to
 ## Array of Objects
 
 ## Multi-Dimensional Arrays
-
+#### *Code:* [StringExample.java](https://github.com/itsfarhan/interview-prep/blob/main/JavaExamples/src/StringExample.java) 
 ## Strings
 
 ## Static Block, Method, Variable

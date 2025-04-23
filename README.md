@@ -180,12 +180,12 @@ Array is a collection of **fixed size** elements in which all elements belong to
     int[] numbers = {10, 20, 30, 40, 50}; // Array with direct initialization=
     int[] numbers = new int[] {1, 2, 3, 4, 5};
 
-#### *Code:* [ArraysExamples.java](https://github.com/itsfarhan/interview-prep/blob/main/JavaExamples/src/ArraysExamples.java) and [ArraysExample.java](https://github.com/itsfarhan/interview-prep/blob/main/JavaExamples/src/ArraysExample.java)
+***Code***: [ArraysExamples.java](https://github.com/itsfarhan/interview-prep/blob/main/JavaExamples/src/ArraysExamples.java) and [ArraysExample.java](https://github.com/itsfarhan/interview-prep/blob/main/JavaExamples/src/ArraysExample.java)
 
 ## Array of Objects
 
 ## Multi-Dimensional Arrays
-#### *Code:* [StringExample.java](https://github.com/itsfarhan/interview-prep/blob/main/JavaExamples/src/StringExample.java) 
+***Code***: [StringExample.java](https://github.com/itsfarhan/interview-prep/blob/main/JavaExamples/src/StringExample.java) 
 ## Strings
 
 ## Static Block, Method, Variable
@@ -241,16 +241,129 @@ Array is a collection of **fixed size** elements in which all elements belong to
 ## Threads
 
 ## Collections
+Java Collection API is a set of classes and interfaces framework in which you can implement data structures and manipulate data. With this we can use operations like searching, sorting, inserting, deleting) on data storage to efficiently handle.
+
+Through the use of Collection framework you can implement multiple data structures like List, Set, Queue, Map etc.,  Lets understand collection api in a better way.
+
+So, basically collection is a root interface in which it defines almost all data structures in java. Inside this root interface we have sub interfaces like - List, Set and Queue.
+
+#### List Interface: 
+List is a **ordered collection** and it allows duplicate elements.
+Lets say, when you wanna **store** elements in **indexed** form(maybe like student list), you gotta use Lists. There are few lists like **ArrayList, LinkedList, Vector**.
+
+#### Set Interface
+Set is a **unordered collection** and it **doesn't allow duplicate** elements.
+Lets say, when you wanna **store unique** values like **email IDs or Product IDs**, you use Set. Few sets are **Hashset, LinkedHashSet, TreeSet**.
+
+#### Queue Interface
+Queue is a **ordered collection** and it manages elements in **FIFO(First In, First Out) order**.
+Lets say, when you wanna **process tasks sequentially** like ticket booking system or request raise as ticket. Queues examples are **PriorityQueue, LinkedList(as a queue)**.
+
+#### Map Interface
+Map interface **stores data as key-value pairs** where **key** is **unique** all the time.
+You may use Maps when you want to store data as key-value pairs like userid and name. Where **id cant be duplicated** but **name can have duplicates**. Types of Maps are **HashMap, TreeMap, LinkedHashMap**.
+
 
 ## ArrayList
+ArrayList is a class in Java Collection Framework which implements resizable array.
+ArrayList is a dynamic array where it uses array internally to store the data but unlike array it is not restricted by size rather it grows its size if array is full. Basically it creates a new array internally larger size than previous full array and then copy elements from previous array to the larger array which has more space.
+
+### Features
+
+ 1. **Dynamic Size**: ArrayList size automatically grow and shrink as per requirements
+ 2. **Index-Based Access**: You can directly access elements of list based on its index.
+ 3. **Maintain Insertion Order**: ArrayLists elements are stored in added order. Basically, the order which was added is the same order for storing elements. Therefore it maintains insertion order.
+ 4. **Allowing Dups**: Duplicate elements are allowed in ArrayList. You can store same element multiple times and it will be stored.
+ 5. **Null Values**: ArrayList allows null values.
+
+### Few important methods of ArrayList:
+
+ 1. **add(element)**: To add new element to the list. 
+ 2. **get(index)**: Element returns based on its index. 
+ 3. **remove(index)**: Removes element based on index or element.
+ 4. **size()**: Returns size of list 
+ 5. **clear()**: Clears/Removes entire elements. contains(element): Verifies if given
+    element is available in the list or not.
+
+#### Performance: 
+ArrayList access time is constant (O(1)) because elements in ArryaList are accessed based on index. But insertion and removal operation takes (O(n)) when you add or remove any element from ArrayList because next elements has to be shifted.
+
+***Code***: [ArrayListExample.java](https://github.com/itsfarhan/interview-prep/blob/main/JavaExamples/src/ArrayListExample.java)
 
 ## LinkedList
+LinkedList is a linear data structure where elements are stored sequentially. Every Node(element) with its data consists reference or pointer of next Node. If its a doubly LinkedList then it has reference or pointer of previous Node. In java, LinkedList can be imported from pkg called java.util.LinkedList. This can implement List and Dequeue interfaces. Therefore, doubly ended operations are handled efficiently.
+
+One more thing about LinkedList is unlike array memory locations are not continuous even though sequentially stored. Thats why!!! they use references of prev and next node.
+
+### Features:
+1. **Dynamic Size**: Size of LinkedList dynamically grows when elements are inserted and deleted.
+2. **Insertion and Deletion**: Operations like insertion and deletion in LinkedList are efficient, especially at the beginning and middle, because you dont have the need to shift elements. In arrays, you do need to shift.
+3. **Sequential Access**: Elements in LinkedList are traversed sequentially. You gotta start from first Node and travel sequentially to the next Nodes.
+4. **No Index-Based Access**: You cannot access elements directly in LinkedList like Array does. You have to do sequential traversal.
+5. **Doubly LinkedList**: Basically in Java's Linkedlist is Doubly LinkedList. You have references of Prev and Next Node.
+
+### How LinkedList looks like?
+**Data**: Every Node has data to store.
+**Next**: Holds pointer of a Next Node reference.
+**Prev(doubly LinkedList)**: Holds pointer of a Prev Node reference.
+
+    Prev <-> Data <-> Next
+
+### Few important methods of LinkedList
+1.  **add(element)**: Add element at the end of the list.
+2.  **addFirst(element)**: Add element at the start of the list.
+3.  **addLast(element)**: Add element at the end of the list. (Alternative for `add(element)`).
+4.  **removeFirst()**: Removes the first element of the list.
+5.  **removeLast()**: Removes the last element of the list.
+6.  **getFirst()**: Returns the first element of the list without removing.
+7.  **getLast()**: Returns the last element of the list without removing.
+
+### Performance
+**Insertion and Deletion**: Operations like insertion and deletion in LinkedList are efficient, especially at the beginning and middle. Because all you gotta do is update references.
+**Access Time**: LinkedList is not efficient for random access. Because you have to sequentially traverse elements. Array have constant time (O(1)) but LinkedList has (O(n)).
 
 ## Vector
 
 ## Set
 
 ## Map
+Map is a interface and its part of Java collection framework. Map stores data in Key-Value pairs where key is the unique identifier and value is part of that key.
+
+### Feature
+1. **Key-Value Pairs**: Every element is made up of a key and a value. Key is unique and value is associated with it.
+2. **Unique Keys**: Duplicate Keys are not allowed but duplicate Values are allowed.
+3. **No Specific Order**: In HashMap like implementations elements are not in specific order. But in LinkedHashMap maintains insertion order.
+4. **Null Keys and Values**: Depending on implementations Null Keys and Null Values can be allowed (HashMap allows only one Null Key and multiple Null Values.
+
+### Common Map implementations:
+
+ 1. HashMap
+ 2. LinkedHashMap 
+ 3. TreeMap 
+ 4. Hashtable
+
+### 1. HashMap:
+HashMap is a class and part of Java Collection Framework which implements Map interface. HashMap stores data as key-value pairs where key is unique identifier and corresponding to that key there is a value.
+
+### Features
+1. **Key-Value Pairs**
+2. **Unique Keys**: HashMap doesnt allow duplicate keys. If you enter a new value with a existing key, it overrides the previous value.
+3. **One Null Key** and **Multiple Null Values**.
+4. **No Ordering**.
+5. Fast Performance: Main advantage of HashMap is Fast Access. You can retrieve any value quickly based on its key. It retrieves in constant time (O(1)).
+
+### How HashMap works Internally!!!
+**Hashing**: When you insert a key-value pair HashMap generates Hashcode of the Key. Based on that Hashcode, value are stored in a bucket(memory location).
+**Collision Handling**: If hashcode of two different keys are same(btw, its rare) then collision happens!!! HashMap uses a balanced tree (red-black tree, *introduced in Java 8*) to store multiple entries in a single bucket.
+**Load Factor**: HashMap load factor default value is 8 *(Java  8)* When HashMap crosses the threshold, internally it rehashes its buckets and doubles the size so that there should not be any performance degrade.
+
+### Advantages
+
+### Disadvantages
+
+### 2. LinkedHashMap
+### 3. TreeMap
+### 4. Hashtables
 
 ## Queue
 

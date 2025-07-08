@@ -12,25 +12,25 @@
 // Output: false
 
 package Stacks;
+
 import java.util.Stack;
 
 public class ValidParantheses {
-    public static boolean isValid(String str){
+    public static boolean isValid(String str) {
         Stack<Character> stack = new Stack<>();
 
-        for(char c : str.toCharArray()){
-            if (c == '{' || c == '[' || c == '('){
+        for (char c : str.toCharArray()) {
+            if (c == '{' || c == '[' || c == '(') {
                 stack.push(c);
-            } 
-            else{
-                if(stack.isEmpty()){
+            } else {
+                if (stack.isEmpty()) {
                     return false;
                 }
 
                 char top = stack.pop();
-                if ((c == '}' && top != '{') || 
-                    (c == ')' && top != '(') || 
-                    (c == ']' && top != '[')){
+                if ((c == '}' && top != '{') ||
+                        (c == ')' && top != '(') ||
+                        (c == ']' && top != '[')) {
                     return false;
                 }
             }
@@ -38,23 +38,21 @@ public class ValidParantheses {
         return stack.isEmpty();
 
         // if(c == '('){
-        //     stack.push(')');
+        // stack.push(')');
         // }
         // else if(c == '{'){
-        //     stack.push('}');
+        // stack.push('}');
         // }
         // else if(c == '['){
-        //     stack.push(']');
+        // stack.push(']');
         // }
         // else if(stack.isEmpty() || stack.pop() != c){
-        //     return false;
+        // return false;
         // }
     }
 
     public static void main(String[] args) {
         String input = "({[]})";
-        System.out.println("Is valid? "+ isValid(input));
+        System.out.println("Is valid? " + isValid(input));
     }
 }
-
-

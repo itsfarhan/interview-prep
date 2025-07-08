@@ -19,7 +19,7 @@ public class ConcatenationOfArray {
         // }
 
         //Optimized approach
-// System.arraycopy(Source array, Source start, Target array, Target start, Length);
+        // System.arraycopy(Source array, Source start, Target array, Target start, Length);
         System.arraycopy(nums, 0, result, 0, n);
 
         System.arraycopy(nums, 0, result, n, n);

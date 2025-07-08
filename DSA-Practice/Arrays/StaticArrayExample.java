@@ -8,7 +8,7 @@ public class StaticArrayExample{
         System.out.println("Element at index '2' is: "+myArr[2]);
 
         //Array Traversal
-        for(int i=0;i<myArr.length;i++){
+        for(int i=0;i<myArr.length;i++) {
             System.out.println("Element at index "+i+" is: "+myArr[i]);
         }
 
@@ -16,7 +16,7 @@ public class StaticArrayExample{
         int target = 30;
         boolean found = false;
 
-        for(int i=0; i<myArr.length;i++){
+        for(int i=0;i<myArr.length;i++){
             if(myArr[i]==target){
                 found = true;
                 System.out.println("Element found at index: "+i);

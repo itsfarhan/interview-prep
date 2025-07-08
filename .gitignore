@@ -14,3 +14,10 @@ _book
 *.epub
 *.mobi
 *.pdf
+
+.vscode/*
+
+codealike.json
+
+DSA-Practice/codealike.json
+JavaExamples/codealike.json

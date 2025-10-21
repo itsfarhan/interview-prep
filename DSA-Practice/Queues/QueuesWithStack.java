@@ -27,7 +27,7 @@ import java.util.Queue;
 // - For frequent pushes, use pop costly.
 
 class MyStackPush{
-    private Queue<Integer>q1;
+    private Queue<Integer> q1;
     private Queue<Integer> q2;
 
     public MyStackPush(){
@@ -51,10 +51,12 @@ class MyStackPush{
     }
 
     public int pop(){
+        // Remove the element from the front of queue1
         if(q1.isEmpty()){
             System.out.println("Empty Stack");
             return -1;
         }
+        // Remove the element from the front of queue1
         return q1.poll();
     }
 
@@ -63,6 +65,7 @@ class MyStackPush{
             System.out.println("Empty");
             return -1;
         }
+        // Return the front element of queue1
         return q1.peek();
     }
 

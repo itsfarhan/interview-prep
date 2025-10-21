@@ -21,7 +21,7 @@ public class ConcatenationOfArray {
         //Optimized approach
         // System.arraycopy(Source array, Source start, Target array, Target start, Length);
         System.arraycopy(nums, 0, result, 0, n);
-
+        // Fill the second half of the result array
         System.arraycopy(nums, 0, result, n, n);
 
         return result;

@@ -40,7 +40,7 @@ class SingleLinkedList{
             current = current.next; // Move forward.
         }
         // Adding a new node after last node
-        current.next = newNode; //
+        current.next = newNode; 
     }
 
     public void deleteAtStart(){

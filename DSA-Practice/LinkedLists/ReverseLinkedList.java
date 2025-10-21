@@ -31,10 +31,12 @@ class ReverseLL{
         Node current = head;
         Node next = null;
         while(current != null){
-            next = current.next;
-            current.next =  prev;
-            prev = current;
-            current = next;                
+            next = current.next; // Store next node
+            current.next =  prev; // Reverse current node's pointer
+            // Move pointers one position ahead.
+            
+            prev = current; // Move prev to current
+            current = next; // Move current to next node      
         }
         head = prev;
     }

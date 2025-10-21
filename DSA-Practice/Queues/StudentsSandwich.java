@@ -67,6 +67,7 @@ import java.util.Queue;
 public class StudentsSandwich {
     public int countStudents(int []students, int[] sandwiches){
         Queue<Integer> queue = new LinkedList<>();
+        // Add all students to the queue
         for (Integer student : students) {
             queue.add(student);
         }
@@ -74,7 +75,7 @@ public class StudentsSandwich {
         int index = 0;
         int count = 0;
 
-        while(!queue.isEmpty() && count < queue.size()){
+        while(!queue.isEmpty() && count < queue.size()){ // If count equals the size of the queue, it means no student can eat the top sandwich
             if(queue.peek() ==  sandwiches[index]){
                 queue.poll();
                 index++;

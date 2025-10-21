@@ -7,8 +7,8 @@ public class RemoveDuplicates {
     public static int removeDuplicates(int[] arr){
         if (arr == null || arr.length == 0){ return 0; } // edge case
 
-        int j = 0;
-
+        int j = 0; 
+        // traverse the array
         for(int i=1; i<arr.length; i++){
             if(arr[i] != arr[j]){
                 j++;

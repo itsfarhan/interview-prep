@@ -5,10 +5,9 @@ package Arrays;
 
 public class RemoveElement {
     public static int removeElement(int[] arr, int val) {
-        if (arr == null || arr.length == 0) return 0; //edge case
-        // Two pointers approach
-        int j = 0;
+        if(arr == null || arr.length == 0) { return 0; }
 
+        int j = 0;
         for(int i=0; i<arr.length; i++){
             if(arr[i] != val){
                 arr[j] = arr[i];
@@ -18,14 +17,14 @@ public class RemoveElement {
         return j;
     }
     public static void main(String[] args) {
-        int []arr = new int [] {3,2,2,3};
-        int val = 3;
+        int []arr = new int [] {1,2,3,4,5,6,5,7,2,9};
+        int val = 5;
         int newLength = removeElement(arr, val);
         System.out.println("New length of the array: " + newLength);
 
         System.out.println("Modified array: ");
         for(int i=0; i<newLength; i++){
-            System.out.println(arr[i] + " ");
+            System.out.print(arr[i] + ",");
         }
     }
 }

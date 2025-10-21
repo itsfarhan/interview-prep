@@ -1,5 +1,6 @@
 // Custom implementation of Stacks using arrays
 
+// Stack follows LIFO - Last In First Out principle
 package Stacks;
 
 class Stack{

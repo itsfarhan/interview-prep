@@ -40,10 +40,17 @@ public class ComparableVsCompartor {
             new EmployeeList(5, "Bob", 20, 4000.0),
             new EmployeeList(4, "Alice", 35, 7000.0)
         );
+        System.out.println("Not Sorted List: ");
+        for(EmployeeList emplist : employeeList){
+            System.out.println(emplist);
+        }
+
+        //Comparable
         System.out.println("Sorted List: ");
         Collections.sort(employeeList);
         employeeList.forEach(System.out::println);
 
+        //Comparator
         System.out.println("Sorted by salary: ");
         employeeList.sort(Comparator.comparingDouble(EmployeeList::getSalary));
         employeeList.forEach(System.out::println);

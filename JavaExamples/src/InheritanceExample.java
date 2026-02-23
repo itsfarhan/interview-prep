@@ -35,7 +35,7 @@ class BankAccount {
 
     // Deposit Method
     public void deposit(double amount) {
-        balance += amount;
+        balance += amount; 
         System.out.println("Balance after deposit: " + balance);
     }
 
@@ -100,7 +100,7 @@ class CurrentAccount extends BankAccount {
         this.overdraftLimit = overdraftLimit;
     }
 
-    @Override
+    @Override 
     public void withDraw(double amount) {
         if (amount <= (balance + overdraftLimit)) {
             balance -= amount;
@@ -145,15 +145,17 @@ public class InheritanceExample {
         BankAccount bankAccount = new BankAccount(50000);
         bankAccount.deposit(2000);
         bankAccount.displayBalance();
+        bankAccount.withDraw(2000);
+        bankAccount.displayBalance();
 
         // Create a SavingsAccount and calculate interest
-        SavingsAccount savings = new SavingsAccount(10000, 5);
+        SavingsAccount savings = new SavingsAccount(50000, 5);
         savings.calculateInterest();
 
         // Create a CurrentAccount and test withdrawal with overdraft limit
-        CurrentAccount current = new CurrentAccount(20000, 5000);
-        current.withDraw(6000);
-        current.deposit(1000);
+        CurrentAccount current = new CurrentAccount(50000, 15000);
+        current.withDraw(16000);
+        current.deposit(10000);
         current.displayBalance();
 
         // Create a FixedDepositAccount and display maturity details

@@ -26,5 +26,7 @@ public class AbstractExample {
         SoftwareEngineer softwareEngineer2 = new Tester(); // Upcasting
         softwareEngineer1.doWork(); // Developer class -> Child class
         softwareEngineer2.doWork(); // Tester class -> Child class
+        softwareEngineer1.login();
+        softwareEngineer2.login();
     }
 }

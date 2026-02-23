@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class InsertionSort{
     public static void insertionSort(int[] arr){
-        if (arr == null || arr.length == 0){ return; }
+        if (arr == null || arr.length == 0){ return; } //edge case
         int j, tmp;
         for (int i=1; i<arr.length; i++){
             j=i-1;
